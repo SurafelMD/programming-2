@@ -1,0 +1,42 @@
+﻿#include<iostream>
+using namespace std;
+int main(){
+ float r;
+const float pi=3.146;
+cout<<"enter to radius of the circle"<<endl;
+cin >>r;
+float cir=(2*pi)*r;
+cout<<"the circle with radius of "<<r<<"circum france is"<<cir;
+return 0;
+}
+
+  #include<iostream>
+#include<math.h>
+using namespace std;
+int main(){
+ int a,b,c;
+cout<<"enter the value of a "<<endl;
+cin>>a;
+cout<<"enter the value of b"<<endl;
+cin >>b;
+cout<<"enter the value of c"<<endl;
+int x1,x2;
+cin>>c;
+int temp;
+temp=sqrt((b*b)-(4*a*c));
+
+if(temp<0){
+cout<<"the equation does not have solution"<<endl;
+}
+else if(temp==0){
+x1=(-1*b)/(2*a);
+cout<<"the solution is"<<x1<<endl;
+}
+else{
+x1=((-1*b)-temp)/(2*a);
+x2=((-1*b)+temp)/(2*a);
+cout<<"the solution is"<<x1<<endl;
+cout<<"the solution is"<<x2<<endl;
+}
+return 0;
+} 
